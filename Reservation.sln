@@ -1,13 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Booking", "Booking", "{920CCE1F-FEFF-4B15-800B-599A878F42A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Booking", "Services\Booking\Reservation.Booking\Reservation.Booking.csproj", "{655E2913-5894-4C88-95B2-E8EBE1A41F4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Review", "Review", "{29A8D153-D32A-43C6-B961-E1370B2B93EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Review", "Services\Review\Reservation.Review\Reservation.Review.csproj", "{D11AEB3E-FE6A-4D3B-9077-B067DB773F40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{8D3C6759-059B-4B54-91A3-D6B77AAEC7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{AF5BEFDA-28AE-7603-040D-593562AC6BD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +27,14 @@ Global
 		{655E2913-5894-4C88-95B2-E8EBE1A41F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{655E2913-5894-4C88-95B2-E8EBE1A41F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{655E2913-5894-4C88-95B2-E8EBE1A41F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11AEB3E-FE6A-4D3B-9077-B067DB773F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11AEB3E-FE6A-4D3B-9077-B067DB773F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11AEB3E-FE6A-4D3B-9077-B067DB773F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11AEB3E-FE6A-4D3B-9077-B067DB773F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5BEFDA-28AE-7603-040D-593562AC6BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5BEFDA-28AE-7603-040D-593562AC6BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5BEFDA-28AE-7603-040D-593562AC6BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5BEFDA-28AE-7603-040D-593562AC6BD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +42,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{920CCE1F-FEFF-4B15-800B-599A878F42A4} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{655E2913-5894-4C88-95B2-E8EBE1A41F4B} = {920CCE1F-FEFF-4B15-800B-599A878F42A4}
+		{29A8D153-D32A-43C6-B961-E1370B2B93EA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D11AEB3E-FE6A-4D3B-9077-B067DB773F40} = {29A8D153-D32A-43C6-B961-E1370B2B93EA}
+		{AF5BEFDA-28AE-7603-040D-593562AC6BD5} = {8D3C6759-059B-4B54-91A3-D6B77AAEC7FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D33E3DA-3C14-44D8-A590-C2FBE68B4053}
