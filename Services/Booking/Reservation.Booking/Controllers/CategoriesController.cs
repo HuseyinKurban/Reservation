@@ -28,5 +28,25 @@ namespace Reservation.Booking.Controllers
             await _categoryService.CreateCategoryAsync(createCategoryDto);
             return Ok("Ekleme Başarılı");
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteCategory(string id)
+        {
+            await _categoryService.DeleteCategoryAsync(id);
+            return Ok("Silme Başarılı");
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
+        {
+            await _categoryService.UpdateCategoryAsync(updateCategoryDto);
+            return Ok("Güncelleme Başarılı");
+        }
+
+        [HttpGet("GetCategory")]
+        public async Task<IActionResult> GetCategory(string id)
+        {
+            return Ok(await _categoryService.GetCategoryByIdAsync(id));
+        }
     }
 }
