@@ -18,6 +18,7 @@ namespace IdentityServer
           new ApiResource("ResourcePayment"){Scopes = {"PaymentFullPermission"}},
           new ApiResource("ResourceBasket"){Scopes = {"BasketFullPermission"}},
 
+
       };
     }
 }
