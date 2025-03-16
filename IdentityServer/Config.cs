@@ -15,9 +15,6 @@ namespace IdentityServer
           new ApiResource("ResourceBooking2"){Scopes = {"BookingReadPermission"}},
           new ApiResource("ResourceBooking3"){Scopes = {"BookingReadPermission","BookingUpdatePermission"}},
           new ApiResource("ResourceReview"){Scopes = {"ReviewFullPermission"}},
-          new ApiResource("ResourcePayment"){Scopes = {"PaymentFullPermission"}},
-          new ApiResource("ResourceBasket"){Scopes = {"BasketFullPermission"}},
-
 
       };
     }
