@@ -31,9 +31,12 @@ namespace IdentityServer.Controllers
 
             if (result.Succeeded)
             {
-                return Ok();
+                return Ok("Kullanıcı Başarıyla Eklendi");
             }
-            return StatusCode(StatusCodes.Status500InternalServerError, new { Status = "Error", Message = "User creation failed! Please check user details and try again." });
+            else
+            {
+                return BadRequest(result.Errors);
+            }
         }
     }
 }
